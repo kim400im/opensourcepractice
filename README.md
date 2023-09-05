@@ -7,7 +7,7 @@ This is my introduction!
 * :computer: **What I want to study**: Want to study in deep learning and artificial intelligence 
 * :cake: **Eating Dessert**: I like eating dessert such as cake 
 * :airplane: **Travel**: I enjoy travelling other countries
-* :city: **Seoul**: I live in Seoul Seoung-Buk
+* :house: **Seoul**: I live in Seoul Seoung-Buk
 
 Come and see my github page :smile:
 * [my github page](https://github.com/kim400im)
