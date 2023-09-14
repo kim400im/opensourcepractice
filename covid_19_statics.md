@@ -1,27 +1,22 @@
-def normalize_data(n_cases, n_people, scale):
-    # TODO) Calculate the number of cases per its population
-    norm_cases = []
-    for idx, n in enumerate(n_cases):
-        norm_cases.append(n/n_people[idx]*scale)
-    return norm_cases
+### Korean Population by Region
+* Total population: 51669716
 
-regions  = ['Seoul', 'Gyeongi', 'Busan', 'Gyeongnam', 'Incheon', 'Gyeongbuk', 'Daegu', 'Chungnam', 'Jeonnam', 'Jeonbuk', 'Chungbuk', 'Gangwon', 'Daejeon', 'Gwangju', 'Ulsan', 'Jeju', 'Sejong']
-n_people = [9550227,  13530519, 3359527,     3322373,   2938429,     2630254, 2393626,    2118183,   1838353,   1792476,    1597179,   1536270,   1454679,   1441970, 1124459, 675883,   365309] # 2021-08
-n_covid  = [    644,       529,      38,          29,       148,          28,      41,         62,        23,        27,         27,        33,        16,        40,      20,      5,        4] # 2021-09-21
-
-sum_people = sum(n_people) # TODO) The total number of people
-sum_covid  = sum(n_covid) # TODO) The total number of new cases
-norm_covid = normalize_data(n_covid, n_people, 1000000) # The new cases per 1 million people
-
-# Print population by region
-print('### Korean Population by Region')
-print('* Total population:', sum_people)
-print() # Print an empty line
-print('| Region | Population | Ratio (%) |')
-print('| ------ | ---------- | --------- |')
-for idx, pop in enumerate(n_people):
-    ratio = pop/1000000 # TODO) The ratio of new cases to the total
-    print('| %s | %d | %.1f |' % (regions[idx], pop, ratio))
-print()
-
-# TODO) Print COVID-19 new cases by region
+| Region | Population | Ratio (%) |
+| ------ | ---------- | --------- |
+| Seoul | 9550227 | 9.6 |
+| Gyeongi | 13530519 | 13.5 |
+| Busan | 3359527 | 3.4 |
+| Gyeongnam | 3322373 | 3.3 |
+| Incheon | 2938429 | 2.9 |
+| Gyeongbuk | 2630254 | 2.6 |
+| Daegu | 2393626 | 2.4 |
+| Chungnam | 2118183 | 2.1 |
+| Jeonnam | 1838353 | 1.8 |
+| Jeonbuk | 1792476 | 1.8 |
+| Chungbuk | 1597179 | 1.6 |
+| Gangwon | 1536270 | 1.5 |
+| Daejeon | 1454679 | 1.5 |
+| Gwangju | 1441970 | 1.4 |
+| Ulsan | 1124459 | 1.1 |
+| Jeju | 675883 | 0.7 |
+| Sejong | 365309 | 0.4 |
